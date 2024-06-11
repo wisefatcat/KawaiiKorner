@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif; /* Apply Poppins font to the entire body */
+}
+
+.inlineForm {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.container {
+    position: sticky;
+    top: 0;
+    margin: 60px auto 20px auto; /* Reduced bottom margin */
+    padding: 20px;
+    border-radius: 15px;
+    background: #ecf0f3;
+    box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
+    max-width: 800px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.input, .button {
+    border: none !important;
+    outline: none !important;
+    box-sizing: border-box;
+    margin: 5px;
+    font-family: 'Poppins', sans-serif; /* Apply Poppins font to inputs and buttons */
+}
+
+.input {
+    background: #ecf0f3 !important;
+    height: 45px;
+    font-size: 14px;
+    border-radius: 50px !important;
+    box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+}
+
+.nameInput {
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: 45px;
+    margin-right: 75px;
+}
+
+.sign { /* Apply the background color to InputGroup.Text */
+
+  background-color: #ecf0f3 !important;
+  font-weight: 900;
+  border: none !important;
+}
+
+.button {
+    display: inline-block;
+    color: white;
+    height: 45px;
+    width: 105px;
+    border-radius: 45px !important;
+    cursor: pointer;
+    font-weight: 900;
+    box-shadow: 6px 6px 6px #cbced1, -6px -6px 6px white;
+    transition: 0.5s;
+    margin-right: 45px;
+}
+
+.button:hover {
+    box-shadow: none;
+}
+
+@media (min-width: 768px) {
+    .input {
+        width: auto;
+    }
+}

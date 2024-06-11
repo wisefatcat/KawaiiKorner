@@ -1,0 +1,46 @@
+@font-face {
+    font-family: SakuraKei;
+    src: url('../fonts/SakuraKei.ttf');
+}
+
+@font-face {
+    font-family: KaoriGel;
+    src: url('../fonts/KaoriGel.ttf');
+}
+
+
+.title {
+    margin-top: 100px;
+    color: #274b52;
+    font-family: 'SakuraKei', sans-serif;
+    font-size: 5.5em;
+    text-shadow: 2px 2px 6px #f2a9a2;
+}
+
+.content {
+    font-family: 'KaoriGel', sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: floralwhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 270px;
+    text-shadow: 2px 2px 2px #0e1c33;
+}
+
+#label {
+    border: 1px solid rgba(0,0,0,.2);
+    color: floralwhite;
+    height: 60px;
+    line-height: 35px;
+    width: 150px;
+    border-radius: 25px;
+    font-size: 16px;
+    background-color: #997078;
+}
+
+#label:hover {
+    background-color: #875a63; /* Darker shade for hover */
+    border-color: rgba(0,0,0,.5); /* Darker border color for hover */
+}

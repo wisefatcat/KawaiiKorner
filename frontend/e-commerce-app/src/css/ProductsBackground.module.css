@@ -1,0 +1,90 @@
+.backgroundItems {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.catalog {
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  display: flex;
+  justify-content: center; /* Center the items horizontally */
+  flex-wrap: wrap;
+  gap: 10px; /* Add some gap between cards */
+}
+
+.texture {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: transparent url(../images/texture5.jpg) no-repeat top center;
+  background-size: cover;
+  z-index: -1000;
+  overflow: auto; /* Ensure the container is scrollable */
+  min-height: 100vh;
+  
+}
+
+.texture::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: inherit; /* Inherit the background image */
+  z-index: -1; /* Ensure the pseudo-element is behind the content */
+}
+
+.texture::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5); /* Semi-transparent white overlay */
+  z-index: -1; /* Ensure the pseudo-element is behind the content */
+}
+
+
+/* .bokeh2 {
+  composes: backgroundItems;
+  background: transparent url(../images/bokeh2.jpg) no-repeat top center;
+  background-size: 100%;
+  z-index: -1;
+  opacity: 0.25;
+  filter: blur(10px);
+} */
+
+#title {
+  display: block;
+  position: relative;
+  font-weight: 800;
+  color: black;
+  top: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+  z-index: 1000; /* Ensure it appears above other content */
+  font-size: 3rem; /* Adjust font size as needed */
+  font-family: 'KaoriGel', sans-serif;
+}
+
+#createButton {
+  display: inline-block;
+  position: relative;
+  top: 30px;
+  left: 30px;
+}
+
+
